@@ -1,9 +1,7 @@
 def high_five(items)
     all_scores = Hash.new
     
-    items.each do |pair|
-        id, score = pair
-        
+    items.each do |id, score|
         if not all_scores.include? id
             all_scores[id] = []
         end

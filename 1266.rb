@@ -1,8 +1,7 @@
 def min_time_to_visit_all_points(points)
     total_steps = 0
     
-    points.each_cons(2).each do |pair|
-        first, last = pair
+    points.each_cons(2).each do |first, last|
         x_first, y_first = first
         x_last, y_last = last
         steps = 0

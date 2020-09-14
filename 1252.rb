@@ -5,9 +5,7 @@ def odd_cells(n, m, indices)
         matrix.push [0] * m
     end
     
-    indices.each do |pair|
-        row, column = pair
-        
+    indices.each do |row, column|
         (0...m).each do |i|
             matrix[row][i] += 1
         end
