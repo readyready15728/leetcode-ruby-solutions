@@ -3,7 +3,7 @@ def balanced_string_split(s)
     count_r = 0
     count = 0
     
-    s.split('').each do |c|
+    s.each_char do |c|
         if c == 'L'
             count_l += 1
         else

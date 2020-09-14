@@ -1,7 +1,7 @@
 def judge_circle(moves)
     x, y = 0, 0
     
-    moves.split('').each do |move|
+    moves.each_char do |move|
         case move
         when 'U'
             y += 1
