@@ -15,5 +15,5 @@ def odd_cells(n, m, indices)
         end
     end
     
-    matrix.map { |row| row.count { |x| x.odd? } }.sum
+    matrix.map { |row| row.count &:odd? }.sum
 end

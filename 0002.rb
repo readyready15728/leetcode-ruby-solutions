@@ -27,7 +27,7 @@ def convert_array(a)
 end
 
 def convert_int(i)
-    i.to_s.each_char.map { |c| c.to_i }
+    i.to_s.each_char.map &:to_i
 end
 
 def add_two_numbers(l1, l2)
